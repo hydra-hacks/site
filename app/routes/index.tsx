@@ -77,6 +77,34 @@ export default function Index() {
           <code>app/routes/demos</code> and <code>app/styles/demos</code>{" "}
           folders when you're ready to turn this into your next project.
         </p>
+        <div className="card max-w-sm">
+          <p className="lead text-white">
+            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
+            You'll be able to meet new friends, build awesome projects while
+            attending workshops, eating food, playing games, and more!
+          </p>
+        </div>
+        <div className="card max-w-sm">
+          <p className="lead text-white">
+            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
+            You'll be able to meet new friends, build awesome projects while
+            attending workshops, eating food, playing games, and more!
+          </p>
+        </div>
+        <div className="card max-w-sm">
+          <p className="lead text-white">
+            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
+            You'll be able to meet new friends, build awesome projects while
+            attending workshops, eating food, playing games, and more!
+          </p>
+        </div>
+        <div className="card max-w-sm">
+          <p className="lead text-white">
+            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
+            You'll be able to meet new friends, build awesome projects while
+            attending workshops, eating food, playing games, and more!
+          </p>
+        </div>
       </main>
       {/* <aside>
         <h2>Demos In This App</h2>
