@@ -60,9 +60,11 @@ export default function Index() {
   let data = useLoaderData<IndexData>();
 
   return (
-    <div className="remix__page">
+    <div className="font-sans">
       <main>
-        <h2>Welcome to Remix!</h2>
+        <h1 className="ultratitle text-center text-gray-50 text-shadow-3xl font-bold py-10">
+          Hydra Hacks
+        </h1>
         <p>We're stoked that you're here. 🥳</p>
         <p>
           Feel free to take a look around the code to see how Remix does things,
@@ -76,7 +78,7 @@ export default function Index() {
           folders when you're ready to turn this into your next project.
         </p>
       </main>
-      <aside>
+      {/* <aside>
         <h2>Demos In This App</h2>
         <ul>
           {data.demos.map((demo) => (
@@ -95,7 +97,7 @@ export default function Index() {
             </li>
           ))}
         </ul>
-      </aside>
+      </aside> */}
     </div>
   );
 }

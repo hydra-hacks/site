@@ -124,7 +124,7 @@ function Document({
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="remix-app">
-      <header className="remix-app__header">
+      <header className="remix-app__header backdrop-blur-md	bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200">
         <div className="container remix-app__header-content">
           <Link to="/" title="Remix" className="remix-app__header-home-link">
             <RemixLogo />
@@ -135,21 +135,29 @@ function Layout({ children }: { children: React.ReactNode }) {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="https://remix.run/docs">Remix Docs</a>
+                <a href="https://remix.run/docs">About</a>
               </li>
               <li>
-                <a href="https://github.com/remix-run/remix">GitHub</a>
+                <a href="https://remix.run/docs">FAQ</a>
+              </li>
+              <li>
+                <a href="https://github.com/remix-run/remix">Register</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <div className="remix-app__main">
+      <div className="remix-app__main bg-gradient-to-bl from-indigo-300 via-purple-400 to-pink-300">
         <div className="container remix-app__main-content">{children}</div>
       </div>
-      <footer className="remix-app__footer">
-        <div className="container remix-app__footer-content">
-          <p>&copy; You!</p>
+      <footer className="remix-app__footer backdrop-blur-md	bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200">
+        <div className="container remix-app__footer-content max-w-md">
+          <p>&copy; {new Date().getFullYear()} Hydra Hacks.</p>
+          <p className="text-center text-sm pt-2">
+            Hydra Hacks is fiscally sponsored by Hack Club Bank, a project by
+            The Hack Foundation (d.b.a. Hack Club), a 501(c)(3) nonprofit (EIN:
+            81-2908499).
+          </p>
         </div>
       </footer>
     </div>
