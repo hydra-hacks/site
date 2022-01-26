@@ -60,11 +60,14 @@ export default function Index() {
   let data = useLoaderData<IndexData>();
 
   return (
-    <div className="font-sans">
+    <div className="font-sans text-white">
       <main>
-        <h1 className="ultratitle text-center text-gray-50 text-shadow-3xl font-bold py-10">
-          Hydra Hacks
-        </h1>
+        <div id="hero" className="py-16 text-center hero ">
+          <h1 className="font-bold ultratitle text-gray-50 text-shadow-3xl">
+            Hydra Hacks
+          </h1>
+          <p className="subheadline">A hackathon for alsdjflakdsf on June 5.</p>
+        </div>
         <p>We're stoked that you're here. 🥳</p>
         <p>
           Feel free to take a look around the code to see how Remix does things,
@@ -77,29 +80,29 @@ export default function Index() {
           <code>app/routes/demos</code> and <code>app/styles/demos</code>{" "}
           folders when you're ready to turn this into your next project.
         </p>
-        <div className="card max-w-sm">
-          <p className="lead text-white">
+        <div className="max-w-sm card">
+          <p className="text-white lead">
             Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
             You'll be able to meet new friends, build awesome projects while
             attending workshops, eating food, playing games, and more!
           </p>
         </div>
-        <div className="card max-w-sm">
-          <p className="lead text-white">
+        <div className="max-w-sm card">
+          <p className="text-white lead">
             Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
             You'll be able to meet new friends, build awesome projects while
             attending workshops, eating food, playing games, and more!
           </p>
         </div>
-        <div className="card max-w-sm">
-          <p className="lead text-white">
+        <div className="max-w-sm card">
+          <p className="text-white lead">
             Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
             You'll be able to meet new friends, build awesome projects while
             attending workshops, eating food, playing games, and more!
           </p>
         </div>
-        <div className="card max-w-sm">
-          <p className="lead text-white">
+        <div className="max-w-sm card">
+          <p className="text-white lead">
             Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
             You'll be able to meet new friends, build awesome projects while
             attending workshops, eating food, playing games, and more!

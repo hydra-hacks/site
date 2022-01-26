@@ -8,7 +8,7 @@ module.exports = {
         sans: ["'DM Sans'", ...defaultTheme.fontFamily.sans],
       },
       textShadow: {
-        "3xl": "3px 3px 7px white",
+        "3xl": "2px 2px 15px white",
       },
     },
   },
