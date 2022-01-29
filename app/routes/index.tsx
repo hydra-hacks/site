@@ -89,9 +89,11 @@ export default function Index() {
         </div>
         <div className="max-w-sm card">
           <p className="text-white lead">
-            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
-            You'll be able to meet new friends, build awesome projects while
-            attending workshops, eating food, playing games, and more!
+            At Hydra Hacks, hundreds of students from all over the world will
+            come together and build awesome projects all while creating a
+            supportive learning community. The event is open to all students
+            ages 13+ who self-identify as women (cis and trans) or non-binary
+            individuals.
           </p>
         </div>
         <div className="max-w-sm card">
