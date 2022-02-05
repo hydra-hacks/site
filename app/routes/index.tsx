@@ -63,53 +63,126 @@ export default function Index() {
     <div className="font-sans text-white">
       <main>
         <div id="hero" className="py-16 text-center hero ">
-          <h1 className="font-bold ultratitle text-gray-50 text-shadow-3xl">
+          <h1 className="font-bold leading-snug ultratitle text-gray-50 text-shadow-3xl">
             Hydra Hacks
           </h1>
-          <p className="subheadline">A hackathon for alsdjflakdsf on June 5.</p>
-        </div>
-        <p>We're stoked that you're here. 🥳</p>
-        <p>
-          Feel free to take a look around the code to see how Remix does things,
-          it might be a bit different than what you’re used to. When you're
-          ready to dive deeper, we've got plenty of resources to get you
-          up-and-running quickly.
-        </p>
-        <p>
-          Check out all the demos in this starter, and then just delete the{" "}
-          <code>app/routes/demos</code> and <code>app/styles/demos</code>{" "}
-          folders when you're ready to turn this into your next project.
-        </p>
-        <div className="max-w-sm card">
-          <p className="text-white lead">
-            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
-            You'll be able to meet new friends, build awesome projects while
-            attending workshops, eating food, playing games, and more!
+          <p className="max-w-3xl mx-auto subheadline">
+            The West Coast's largest hackathon for marginalized genders. Summer
+            2022. Hybrid.
           </p>
+
+          <div className="grid items-start justify-center">
+            <div className="relative group">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-lg blur opacity-75 transition duration-1000 group-hover:opacity-100"></div>
+              <Link to="/register">
+                <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
+                  <span className="text-white hover:no-underline">
+                    Register &rarr;
+                  </span>
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
-        <div className="max-w-sm card">
-          <p className="text-white lead">
-            At Hydra Hacks, hundreds of students from all over the world will
-            come together and build awesome projects all while creating a
-            supportive learning community. The event is open to all students
-            ages 13+ who self-identify as women (cis and trans) or non-binary
-            individuals.
-          </p>
-        </div>
-        <div className="max-w-sm card">
-          <p className="text-white lead">
-            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
-            You'll be able to meet new friends, build awesome projects while
-            attending workshops, eating food, playing games, and more!
-          </p>
-        </div>
-        <div className="max-w-sm card">
-          <p className="text-white lead">
-            Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
-            You'll be able to meet new friends, build awesome projects while
-            attending workshops, eating food, playing games, and more!
-          </p>
-        </div>
+        <section className="px-6 text-xl md:px-12">
+          <div className="container mb-14">
+            <h2 className="font-bold headline">Something for everyone...</h2>
+            <p className="leading-relaxed">
+              Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
+              Whether you're just writing your first line of code or you're an
+              expert hacker, Hydra Hacks is for you. You'll have the opportunity
+              to meet new friends, build awesome projects while attending
+              workshops, eating food, playing games, and more! Hydra Hacks is{" "}
+              <strong>gender-focused</strong> &amp; open to all high school
+              students who identify as female, nonbinary, or ___!
+            </p>
+          </div>
+          {/* <div className="max-w-2xl mx-auto overflow-hidden rounded-xl">
+            <img src="/codeday.jpg" alt="Studnet coding at CodeDay" />
+          </div> */}
+          <div className="container mb-14">
+            <h2 className="font-bold headline">FAQ</h2>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <p>
+                    We adhere to strict guidelines for staying safe and healthy.
+                    All participants must be masked &amp; vaccinated in order to
+                    attend in-person.
+                  </p>
+                </div>
+              </div>
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <p>
+                    We adhere to strict guidelines for staying safe and healthy.
+                    All participants must be masked &amp; vaccinated in order to
+                    attend in-person.
+                  </p>
+                </div>
+              </div>
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <p>
+                    We adhere to strict guidelines for staying safe and healthy.
+                    All participants must be masked &amp; vaccinated in order to
+                    attend in-person.
+                  </p>
+                </div>
+              </div>
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <p>
+                    We adhere to strict guidelines for staying safe and healthy.
+                    All participants must be masked &amp; vaccinated in order to
+                    attend in-person.
+                  </p>
+                </div>
+              </div>
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <p>
+                    We adhere to strict guidelines for staying safe and healthy.
+                    All participants must be masked &amp; vaccinated in order to
+                    attend in-person.
+                  </p>
+                </div>
+              </div>
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <p>
+                    We adhere to strict guidelines for staying safe and healthy.
+                    All participants must be masked &amp; vaccinated in order to
+                    attend in-person.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="container mb-14">
+            <h2 className="pb-3 font-bold headline">With support from...</h2>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+              <img src="/sponsors/hcb-outline.png" alt="Hack Club Bank" />
+            </div>
+            <p className="mt-2 leading-relaxed caption">
+              Interested in partnering with us? We'd love to hear from you!
+              We're reachable at{" "}
+              <a href="mailto:hello@hydrahacks.org">hello@hydrahacks.org</a>
+            </p>
+          </div>
+          <div className="container mb-14">
+            <h2 className="font-bold headline">Team</h2>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <p>alskdfj</p>
+            </div>
+          </div>
+        </section>
       </main>
       {/* <aside>
         <h2>Demos In This App</h2>

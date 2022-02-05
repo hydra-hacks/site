@@ -49,10 +49,7 @@ export function ErrorBoundary({ error }: { error: Error }) {
           <h1>There was an error</h1>
           <p>{error.message}</p>
           <hr />
-          <p>
-            Hey, developer, you should replace this with what you want your
-            users to see.
-          </p>
+          <p>Something went wrong.</p>
         </div>
       </Layout>
     </Document>
@@ -124,33 +121,42 @@ function Document({
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="remix-app">
-      <header className="remix-app__header backdrop-blur-md bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200">
+      <header className="text-white bg-indigo-900 shadow-md bg-opacity-95 remix-app__header backdrop-blur-md">
         <div className="container remix-app__header-content">
-          <Link to="/" title="Remix" className="remix-app__header-home-link">
+          {/* <Link to="/" title="Remix" className="remix-app__header-home-link">
             <RemixLogo />
-          </Link>
+          </Link> */}
+          <p>Hydra logo</p>
           <nav aria-label="Main navigation" className="remix-app__header-nav">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="#" className="hover:text-gray-300">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="https://remix.run/docs">About</a>
+                <Link to="#about" className="hover:text-gray-300">
+                  About
+                </Link>
               </li>
               <li>
-                <a href="https://remix.run/docs">FAQ</a>
+                <Link to="#faq" className="hover:text-gray-300">
+                  FAQ
+                </Link>
               </li>
               <li>
-                <a href="https://github.com/remix-run/remix">Register</a>
+                <Link to="/register" className="hover:text-gray-300">
+                  Register
+                </Link>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <div className="remix-app__main bg-gradient-to-b from-indigo-700 via-purple-800 to-blue-500">
+      <div className="remix-app__main bg-gradient-to-b from-indigo-900 via-indigo-800 to-indigo-700">
         <div className="container remix-app__main-content">{children}</div>
       </div>
-      <footer className="remix-app__footer backdrop-blur-md bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200">
+      <footer className="text-white bg-indigo-800 remix-app__footer backdrop-blur-md">
         <div className="container max-w-md remix-app__footer-content">
           <p>&copy; {new Date().getFullYear()} Hydra Hacks.</p>
           <p className="pt-2 text-sm text-center">
