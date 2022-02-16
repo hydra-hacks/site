@@ -1,6 +1,36 @@
-import { Link, Form, redirect, useActionData } from "remix";
+import { Link, Form, redirect, useActionData, useLoaderData } from "remix";
+import { useState, useEffect } from "react";
+import type { LoaderFunction } from "remix";
 
 export default function Register() {
+  let query = useLoaderData();
+  const [values, setValues] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    pronouns: "",
+    github: "",
+    grade: "",
+    school: "",
+    virtual: "",
+    location: "",
+    ref: "",
+    workshopRequests: "",
+    dietaryRestrictions: "",
+    shirtSize: "",
+  });
+
+  // useEffect(() => {
+  //   setValues({
+  //     firstName: query.firstName || "",
+  //     lastName: query.lastName || "",
+  //   });
+  // }, [query]);
+
+  const handleChange = (e: any) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className="px-6 py-10 mx-auto font-sans text-white container-copy">
       <h1 className="font-bold headline">Register for Hydra Hacks!</h1>
