@@ -121,31 +121,37 @@ function Document({
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="remix-app">
-      <header className="text-white bg-indigo-900 shadow-md bg-opacity-95 remix-app__header backdrop-blur-md">
+      <header className="px-6 text-white bg-indigo-900 shadow-md bg-opacity-95 remix-app__header backdrop-blur-md">
         <div className="container remix-app__header-content">
-          {/* <Link to="/" title="Remix" className="remix-app__header-home-link">
-            <RemixLogo />
-          </Link> */}
-          <p>Hydra logo</p>
+          <Link
+            to="/"
+            title="Hydra Hacks"
+            className="remix-app__header-home-link"
+          >
+            <Logo />
+          </Link>
           <nav aria-label="Main navigation" className="remix-app__header-nav">
             <ul>
               <li>
-                <Link to="#" className="hover:text-gray-300">
+                <Link to="/#" className="hover:text-gray-300">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="#about" className="hover:text-gray-300">
+                <Link to="/#about" className="hover:text-gray-300">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="#faq" className="hover:text-gray-300">
+                <Link to="/#faq" className="hover:text-gray-300">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link to="/register" className="hover:text-gray-300">
+                <Link
+                  to="/register"
+                  className="px-4 py-2 bg-blue-500 rounded-2xl hover:text-gray-300"
+                >
                   Register
                 </Link>
               </li>
@@ -170,25 +176,31 @@ function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-function RemixLogo() {
+function Logo() {
   return (
     <svg
-      viewBox="0 0 659 165"
-      version="1.1"
+      width="275"
+      height="247"
+      viewBox="0 0 275 247"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-      aria-labelledby="remix-run-logo-title"
-      role="img"
-      width="106"
-      height="30"
-      fill="currentColor"
+      className="w-10 h-10"
     >
-      <title id="remix-run-logo-title">Remix Logo</title>
-      <path d="M0 161V136H45.5416C53.1486 136 54.8003 141.638 54.8003 145V161H0Z M133.85 124.16C135.3 142.762 135.3 151.482 135.3 161H92.2283C92.2283 158.927 92.2653 157.03 92.3028 155.107C92.4195 149.128 92.5411 142.894 91.5717 130.304C90.2905 111.872 82.3473 107.776 67.7419 107.776H54.8021H0V74.24H69.7918C88.2407 74.24 97.4651 68.632 97.4651 53.784C97.4651 40.728 88.2407 32.816 69.7918 32.816H0V0H77.4788C119.245 0 140 19.712 140 51.2C140 74.752 125.395 90.112 105.665 92.672C122.32 96 132.057 105.472 133.85 124.16Z" />
-      <path d="M229.43 120.576C225.59 129.536 218.422 133.376 207.158 133.376C194.614 133.376 184.374 126.72 183.35 112.64H263.478V101.12C263.478 70.1437 243.254 44.0317 205.11 44.0317C169.526 44.0317 142.902 69.8877 142.902 105.984C142.902 142.336 169.014 164.352 205.622 164.352C235.83 164.352 256.822 149.76 262.71 123.648L229.43 120.576ZM183.862 92.6717C185.398 81.9197 191.286 73.7277 204.598 73.7277C216.886 73.7277 223.542 82.4317 224.054 92.6717H183.862Z" />
-      <path d="M385.256 66.5597C380.392 53.2477 369.896 44.0317 349.672 44.0317C332.52 44.0317 320.232 51.7117 314.088 64.2557V47.1037H272.616V161.28H314.088V105.216C314.088 88.0638 318.952 76.7997 332.52 76.7997C345.064 76.7997 348.136 84.9917 348.136 100.608V161.28H389.608V105.216C389.608 88.0638 394.216 76.7997 408.04 76.7997C420.584 76.7997 423.4 84.9917 423.4 100.608V161.28H464.872V89.5997C464.872 65.7917 455.656 44.0317 424.168 44.0317C404.968 44.0317 391.4 53.7597 385.256 66.5597Z" />
-      <path d="M478.436 47.104V161.28H519.908V47.104H478.436ZM478.18 36.352H520.164V0H478.18V36.352Z" />
-      <path d="M654.54 47.1035H611.788L592.332 74.2395L573.388 47.1035H527.564L568.78 103.168L523.98 161.28H566.732L589.516 130.304L612.3 161.28H658.124L613.068 101.376L654.54 47.1035Z" />
+      <g clip-path="url(#clip0_2_58)">
+        <path
+          d="M137.84 190.47C67.54 190.47 38.94 226.21 30.69 246.47H244.48C239.12 226.21 205.75 190.47 137.84 190.47Z"
+          fill="white"
+        />
+        <path
+          d="M261 113.84C250.7 103.84 218.11 97.56 203.89 104.56C224.83 95.35 238.68 75.71 239 54.41C239.39 29.03 219.89 7.40998 197.48 1.22998C190.472 -0.651644 183.05 -0.288853 176.259 2.26731C169.467 4.82346 163.648 9.44436 159.62 15.48C152.94 25.4 143.7 41.08 137.83 59.16C131.96 41.08 122.72 25.4 116.05 15.48C112.019 9.43458 106.191 4.80725 99.3896 2.25058C92.588 -0.306085 85.1553 -0.663071 78.14 1.22998C55.73 7.40998 36.23 29.03 36.61 54.41C36.94 75.71 50.78 95.35 71.72 104.56C62.16 100.56 28.16 100.56 14.62 113.84C-1.93 130.06 -4.52 156.84 7.52 174.78C16.4 188.03 33 196.16 47.65 194.84C52.2424 194.386 56.7058 193.059 60.8 190.93C69.38 186.79 107.73 168.29 138.53 168.36C168.08 168.44 199.7 182.36 212.21 188.6C216.16 190.6 223.21 194.35 228.02 194.84C242.86 196.34 259.46 187.93 268.14 174.78C280.11 156.56 275.11 127.56 261 113.84Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_2_58">
+          <rect width="274.86" height="246.47" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 }

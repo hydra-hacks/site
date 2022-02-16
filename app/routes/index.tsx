@@ -86,7 +86,9 @@ export default function Index() {
         </div>
         <section className="px-6 text-xl md:px-12">
           <div className="container mb-14">
-            <h2 className="font-bold headline">Something for everyone...</h2>
+            <h2 className="font-bold headline" id="about">
+              Something for everyone...
+            </h2>
             <p className="leading-relaxed">
               Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
               Whether you're just writing your first line of code or you're an
@@ -101,7 +103,9 @@ export default function Index() {
             <img src="/codeday.jpg" alt="Studnet coding at CodeDay" />
           </div> */}
           <div className="container mb-14">
-            <h2 className="font-bold headline">FAQ</h2>
+            <h2 className="font-bold headline" id="faq">
+              FAQ
+            </h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               <div className="card--interactive">
                 <div className="text-white">
@@ -173,7 +177,10 @@ export default function Index() {
             <p className="mt-2 leading-relaxed caption">
               Interested in partnering with us? We'd love to hear from you!
               We're reachable at{" "}
-              <a href="mailto:hello@hydrahacks.org">hello@hydrahacks.org</a>
+              <a href="mailto:hello@hydrahacks.org" className="underline">
+                hello@hydrahacks.org
+              </a>{" "}
+              &rarr;
             </p>
           </div>
           <div className="container mb-14">
