@@ -57,7 +57,7 @@ export let meta: MetaFunction = () => {
 
 // https://remix.run/guides/routing#index-routes
 export default function Index() {
-  let data = useLoaderData<IndexData>();
+  // let data = useLoaderData<IndexData>();
 
   return (
     <div className="font-sans text-white">
@@ -67,8 +67,8 @@ export default function Index() {
             Hydra Hacks
           </h1>
           <p className="max-w-3xl mx-auto subheadline">
-            The West Coast's largest hackathon for marginalized genders. Summer
-            2022. Hybrid.
+            The West Coast's largest hackathon for marginalized genders. Hybrid.
+            June 2022.
           </p>
 
           <div className="grid items-start justify-center">
@@ -94,14 +94,12 @@ export default function Index() {
               Whether you're just writing your first line of code or you're an
               expert hacker, Hydra Hacks is for you. You'll have the opportunity
               to meet new friends, build awesome projects while attending
-              workshops, eating food, playing games, and more! Hydra Hacks is{" "}
-              <strong>gender-focused</strong> &amp; open to all high school
-              students of marginalized genders!
+              workshops, eating food, playing games, and more! Hydra Hacks is a{" "}
+              <strong>gender-focused</strong> event &amp; open to all high
+              school students of marginalized genders!
             </p>
           </div>
-          {/* <div className="max-w-2xl mx-auto overflow-hidden rounded-xl">
-            <img src="/codeday.jpg" alt="Studnet coding at CodeDay" />
-          </div> */}
+
           <div className="container mb-14">
             <h2 className="font-bold headline" id="faq">
               FAQ
@@ -109,8 +107,8 @@ export default function Index() {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p>
+                  <h3 className="font-bold lead">Who can participate?</h3>
+                  <p className="text-lg">
                     We adhere to strict guidelines for staying safe and healthy.
                     All participants must be masked &amp; vaccinated in order to
                     attend in-person.
@@ -119,8 +117,20 @@ export default function Index() {
               </div>
               <div className="card--interactive">
                 <div className="text-white">
+                  <h3 className="font-bold lead">
+                    Will I be able to participate online?
+                  </h3>
+                  <p className="text-lg">
+                    Currently, Hydra Hacks is planned to be <em>hybrid</em>{" "}
+                    (both in-person and online). Although, the main focus will
+                    be at the physical event.
+                  </p>
+                </div>
+              </div>
+              <div className="card--interactive">
+                <div className="text-white">
                   <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p>
+                  <p className="text-lg">
                     We adhere to strict guidelines for staying safe and healthy.
                     All participants must be masked &amp; vaccinated in order to
                     attend in-person.
@@ -129,38 +139,31 @@ export default function Index() {
               </div>
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p>
+                  <h3 className="font-bold lead">
+                    What if I don't have any experience?
+                  </h3>
+                  <p className="text-lg">
                     We adhere to strict guidelines for staying safe and healthy.
                     All participants must be masked &amp; vaccinated in order to
                     attend in-person.
                   </p>
                 </div>
               </div>
+
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p>
-                    We adhere to strict guidelines for staying safe and healthy.
-                    All participants must be masked &amp; vaccinated in order to
-                    attend in-person.
+                  <h3 className="font-bold lead">How much does it cost?</h3>
+                  <p className="text-lg">
+                    Hydra Hacks is free to attend thanks to our generous
+                    sponsors. Food will be provided.
                   </p>
                 </div>
               </div>
+
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p>
-                    We adhere to strict guidelines for staying safe and healthy.
-                    All participants must be masked &amp; vaccinated in order to
-                    attend in-person.
-                  </p>
-                </div>
-              </div>
-              <div className="card--interactive">
-                <div className="text-white">
-                  <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p>
+                  <h3 className="font-bold lead">What is a hackathon?</h3>
+                  <p className="text-lg">
                     We adhere to strict guidelines for staying safe and healthy.
                     All participants must be masked &amp; vaccinated in order to
                     attend in-person.
@@ -170,13 +173,12 @@ export default function Index() {
             </div>
           </div>
           <div className="container mb-14">
-            <h2 className="pb-3 font-bold headline">With support from...</h2>
+            <h2 className="pb-3 font-bold headline">Supported by</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
               <img src="/sponsors/hcb-outline.png" alt="Hack Club Bank" />
             </div>
             <p className="mt-2 leading-relaxed caption">
-              Interested in partnering with us? We'd love to hear from you!
-              We're reachable at{" "}
+              Interested in partnering with us? We'd love to chat! Contact us at{" "}
               <a href="mailto:hello@hydrahacks.org" className="underline">
                 hello@hydrahacks.org
               </a>{" "}
@@ -186,31 +188,11 @@ export default function Index() {
           <div className="container mb-14">
             <h2 className="font-bold headline">Team</h2>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <p>alskdfj</p>
+              <p>Memojis wahoo</p>
             </div>
           </div>
         </section>
       </main>
-      {/* <aside>
-        <h2>Demos In This App</h2>
-        <ul>
-          {data.demos.map((demo) => (
-            <li key={demo.to} className="remix__page__resource">
-              <Link to={demo.to} prefetch="intent">
-                {demo.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <h2>Resources</h2>
-        <ul>
-          {data.resources.map((resource) => (
-            <li key={resource.url} className="remix__page__resource">
-              <a href={resource.url}>{resource.name}</a>
-            </li>
-          ))}
-        </ul>
-      </aside> */}
     </div>
   );
 }
