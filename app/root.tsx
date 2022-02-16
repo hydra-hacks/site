@@ -171,6 +171,13 @@ function Layout({ children }: { children: React.ReactNode }) {
             Nonprofit EIN: 81-2908499.
           </p>
         </div>
+        <a href="https://vercel.com/?utm_source=hydra-hacks&utm_campaign=oss">
+          <img
+            src="/sponsors/vercel-black.png"
+            alt="Powered by Vercel"
+            className="w-48 py-4 mx-auto"
+          />
+        </a>
       </footer>
     </div>
   );
