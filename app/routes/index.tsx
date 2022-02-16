@@ -96,7 +96,7 @@ export default function Index() {
               to meet new friends, build awesome projects while attending
               workshops, eating food, playing games, and more! Hydra Hacks is{" "}
               <strong>gender-focused</strong> &amp; open to all high school
-              students who identify as female, nonbinary, or ___!
+              students of marginalized genders!
             </p>
           </div>
           {/* <div className="max-w-2xl mx-auto overflow-hidden rounded-xl">
