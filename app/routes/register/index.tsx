@@ -42,7 +42,7 @@ export default function Register() {
         </strong>
       </p>
       <section>
-        <Form action="/hacker-register" method="post">
+        <Form action="https://airtable.hydrahacks.org/api/appAXROp3O0m256Az/Applications" method="post">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="col-span-1">
               <label
