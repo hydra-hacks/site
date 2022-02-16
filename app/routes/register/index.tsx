@@ -1,4 +1,4 @@
-import { Link } from "remix";
+import { Link, Form, redirect, useActionData } from "remix";
 
 export default function Register() {
   return (
@@ -6,12 +6,13 @@ export default function Register() {
       <h1 className="font-bold headline">Register for Hydra Hacks!</h1>
       <p className="subheadline">Yeah!</p>
       <p>
+        Interested in helping out with Hydra Hacks?{" "}
         <strong>
-          <Link to="mentor">Looking to mentor? Go here instead.</Link>
+          <Link to="mentor">Register as a mentor here &rarr;</Link>
         </strong>
       </p>
       <section>
-        <form action="/api/register" method="POST">
+        <Form action="/hacker-register" method="post">
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="col-span-1">
               <label
@@ -55,7 +56,7 @@ export default function Register() {
               />
             </div>
           </div>
-        </form>
+        </Form>
       </section>
     </div>
   );
