@@ -149,10 +149,11 @@ function Layout({ children }: { children: React.ReactNode }) {
               </li>
               <li>
                 <Link
-                  to="/register"
-                  className="px-4 py-2 bg-blue-500 rounded-2xl hover:text-gray-300"
+                  // to="/register"
+                  to="/"
+                  className="px-4 py-2 bg-blue-500 cursor-not-allowed rounded-2xl hover:text-gray-300"
                 >
-                  Register
+                  Register (soon)
                 </Link>
               </li>
             </ul>
