@@ -1,16 +1,10 @@
-# Remix
+# Hydra Hacks
 
-This directory is a brief example of a [Remix](https://remix.run/docs) site that can be deployed to Vercel with zero configuration.
-
-## Deploy Your Own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/remix&template=remix)
-
-_Live Example: https://remix-run-template.vercel.app_
+Hydra Hacks 2022 site built with Remix & Tailwind CSS, deployed on Vercel.
 
 ## Development
 
-To run your Remix app locally, make sure your project's local dependencies are installed:
+To run this repo locally, make sure your project's local dependencies are installed:
 
 ```sh
 yarn install
@@ -24,4 +18,10 @@ yarn run dev
 
 Open up [http://localhost:3000](http://localhost:3000) and you should be ready to go!
 
-If you're used to using the `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) instead, you can also use that, but it's not needed.
+## Supported by
+
+[![Powered by Vercel](https://user-images.githubusercontent.com/72365100/154328564-eebc863f-eab6-4173-a43d-06ad0bc83c28.png)](https://vercel.com/?utm_source=[team-name]&utm_campaign=oss#gh-light-mode-only)
+
+[![Powered by Vercel](https://user-images.githubusercontent.com/72365100/154328580-bb937133-411a-4a36-8839-561c22246091.png)](https://vercel.com/?utm_source=[team-name]&utm_campaign=oss#gh-dark-mode-only)
+
+Interested in sponsoring us? We'd love to chat hello@hydrahacks.org &rarr;
