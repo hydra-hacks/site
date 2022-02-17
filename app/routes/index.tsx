@@ -2,8 +2,8 @@ import type { MetaFunction, LoaderFunction } from "remix";
 import { useLoaderData, json, Link } from "remix";
 
 type IndexData = {
-  resources: Array<{ name: string; url: string }>;
-  demos: Array<{ name: string; to: string }>;
+  team: Array<{ name: string; image: string }>;
+  sponsors: Array<{ name: string; image: string; url: string }>;
 };
 
 // Loaders provide data to components and are only ever called on the server, so
@@ -12,32 +12,37 @@ type IndexData = {
 // https://remix.run/api/conventions#loader
 export let loader: LoaderFunction = () => {
   let data: IndexData = {
-    resources: [
+    team: [
       {
-        name: "Remix Docs",
-        url: "https://remix.run/docs",
+        name: "Cow",
+        image: "/team/cow-avatar.png",
       },
       {
-        name: "React Router Docs",
-        url: "https://reactrouter.com/docs",
+        name: "Random Person",
+        image: "/team/random-person.png",
       },
       {
-        name: "Remix Discord",
-        url: "https://discord.gg/VBePs6d",
+        name: "Giraffe",
+        image: "/team/giraffe.png",
+      },
+      {
+        name: "Wahoo",
+        image: "/team/wahoo.png",
+      },
+      {
+        name: "Giraffe",
+        image: "/team/giraffe.png",
+      },
+      {
+        name: "Wahoo",
+        image: "/team/wahoo.png",
       },
     ],
-    demos: [
+    sponsors: [
       {
-        to: "demos/actions",
-        name: "Actions",
-      },
-      {
-        to: "demos/about",
-        name: "Nested Routes, CSS loading/unloading",
-      },
-      {
-        to: "demos/params",
-        name: "URL Params and Error Boundaries",
+        name: "Hack Club Bank",
+        image: "/sponsors/hcb-outline.png",
+        url: "https://hackclub.com/bank",
       },
     ],
   };
@@ -57,7 +62,7 @@ export let meta: MetaFunction = () => {
 
 // https://remix.run/guides/routing#index-routes
 export default function Index() {
-  // let data = useLoaderData<IndexData>();
+  let data = useLoaderData<IndexData>();
 
   return (
     <div className="font-sans text-white">
@@ -107,41 +112,20 @@ export default function Index() {
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">Who can participate?</h3>
-                  <p className="text-lg">
-                    We adhere to strict guidelines for staying safe and healthy.
-                    All participants must be masked &amp; vaccinated in order to
-                    attend in-person.
-                  </p>
-                </div>
-              </div>
-              <div className="card--interactive">
-                <div className="text-white">
                   <h3 className="font-bold lead">
                     Will I be able to participate online?
                   </h3>
                   <p className="text-lg">
                     Currently, Hydra Hacks is planned to be <em>hybrid</em>{" "}
-                    (both in-person and online). Although, the main focus will
-                    be at the physical event.
+                    (both in-person and online) with a focus on the in-person
+                    component.
                   </p>
                 </div>
               </div>
+
               <div className="card--interactive">
                 <div className="text-white">
                   <h3 className="font-bold lead">What about COVID-19?</h3>
-                  <p className="text-lg">
-                    We adhere to strict guidelines for staying safe and healthy.
-                    All participants must be masked &amp; vaccinated in order to
-                    attend in-person.
-                  </p>
-                </div>
-              </div>
-              <div className="card--interactive">
-                <div className="text-white">
-                  <h3 className="font-bold lead">
-                    What if I don't have any experience?
-                  </h3>
                   <p className="text-lg">
                     We adhere to strict guidelines for staying safe and healthy.
                     All participants must be masked &amp; vaccinated in order to
@@ -155,7 +139,32 @@ export default function Index() {
                   <h3 className="font-bold lead">How much does it cost?</h3>
                   <p className="text-lg">
                     Hydra Hacks is free to attend thanks to our generous
-                    sponsors. Food will be provided.
+                    sponsors. Food will be provided for in-person participants.
+                  </p>
+                </div>
+              </div>
+
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">
+                    What if I don't have any experience?
+                  </h3>
+                  <p className="text-lg">
+                    Don't worry! There will be workshops, mentors, and
+                    opportunities to learn new things and get help on your
+                    projects!
+                  </p>
+                </div>
+              </div>
+
+              <div className="card--interactive">
+                <div className="text-white">
+                  <h3 className="font-bold lead">
+                    What happens if I don't have a team?
+                  </h3>
+                  <p className="text-lg">
+                    No worries! On the first day, we'll have team formation
+                    activities and make sure no hacker is left out.
                   </p>
                 </div>
               </div>
@@ -164,9 +173,10 @@ export default function Index() {
                 <div className="text-white">
                   <h3 className="font-bold lead">What is a hackathon?</h3>
                   <p className="text-lg">
-                    We adhere to strict guidelines for staying safe and healthy.
-                    All participants must be masked &amp; vaccinated in order to
-                    attend in-person.
+                    A hackathon is an event where teams collaborate on a
+                    project, or "hack", within a weekend. There will be
+                    workshops and mentors to help you learn new things and get
+                    help on your projects.
                   </p>
                 </div>
               </div>
@@ -174,9 +184,19 @@ export default function Index() {
           </div>
           <div className="container mb-14">
             <h2 className="pb-3 font-bold headline">Supported by</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
-              <img src="/sponsors/hcb-outline.png" alt="Hack Club Bank" />
-            </div>
+            <ul className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+              {data.sponsors.map((sponsor) => (
+                <li key={sponsor.name}>
+                  <a
+                    href={sponsor.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={sponsor.image} alt={sponsor.name} />
+                  </a>
+                </li>
+              ))}
+            </ul>
             <p className="mt-2 leading-relaxed caption">
               Interested in partnering with us? We'd love to chat! Contact us at{" "}
               <a href="mailto:hello@hydrahacks.org" className="underline">
@@ -185,11 +205,17 @@ export default function Index() {
               &rarr;
             </p>
           </div>
-          <div className="container mb-14">
-            <h2 className="font-bold headline">Team</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <p>Memojis wahoo</p>
-            </div>
+          <div className="container mt-24 mb-14">
+            <h2 className="font-bold text-center lead">
+              Made with &hearts; by the Hydra Hacks Team.
+            </h2>
+            <ul className="flex justify-center">
+              {data.team.map((t) => (
+                <li key={t.name} className="list-none -mr-14">
+                  <img src={t.image} alt={t.name} className="w-40" />
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       </main>
