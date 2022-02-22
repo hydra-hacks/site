@@ -22,7 +22,7 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 
 ![powered-by-vercel](https://user-images.githubusercontent.com/72365100/154403730-07ab5d79-a9f2-472f-af0e-29cf86697ae7.svg)
 
-<!-- 
+<!--
 
 [![Powered by Vercel](https://user-images.githubusercontent.com/72365100/154328564-eebc863f-eab6-4173-a43d-06ad0bc83c28.png)](https://vercel.com/?utm_source=[team-name]&utm_campaign=oss#gh-light-mode-only)
 
@@ -31,3 +31,9 @@ Open up [http://localhost:3000](http://localhost:3000) and you should be ready t
 -->
 
 Interested in sponsoring us? We'd love to chat hello@hydrahacks.org &rarr;
+
+---
+
+## Visualization of the Codebase
+
+![Visualization of the codebase](./diagram.svg)
