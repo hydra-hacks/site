@@ -22,20 +22,16 @@ export let loader: LoaderFunction = () => {
         image: "/team/random-person.png",
       },
       {
-        name: "Giraffe",
-        image: "/team/giraffe.png",
-      },
-      {
         name: "Wahoo",
         image: "/team/wahoo.png",
       },
       {
-        name: "Giraffe",
-        image: "/team/giraffe.png",
+        name: "Cow",
+        image: "/team/cow-avatar.png",
       },
       {
-        name: "Wahoo",
-        image: "/team/wahoo.png",
+        name: "Hugo",
+        image: "/team/hugo.png",
       },
     ],
     sponsors: [
@@ -68,7 +64,7 @@ export default function Index() {
     <div className="font-sans text-white">
       <main>
         <div id="hero" className="py-16 text-center hero ">
-          <h1 className="font-bold leading-snug ultratitle text-gray-50 text-shadow-3xl">
+          <h1 className="font-bold leading-snug ultratitle text-gray-50 text-shadow-3xl text shadow-indigo-500/50">
             Hydra Hacks
           </h1>
           <p className="max-w-3xl mx-auto subheadline">
