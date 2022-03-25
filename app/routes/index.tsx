@@ -26,8 +26,12 @@ export let loader: LoaderFunction = () => {
         image: "/team/cow-avatar.png",
       },
       {
-        name: "Hugo",
+        name: "Hugo Hu",
         image: "/team/hugo.png",
+      },
+      {
+        name: "Tahya Mumtahi",
+        image: "/team/tahya.png",
       },
     ],
     sponsors: [
