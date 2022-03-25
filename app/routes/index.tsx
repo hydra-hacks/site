@@ -47,10 +47,15 @@ export let loader: LoaderFunction = () => {
         url: "https://assemblyai.com",
       },
       {
-        name: "Sticker Giant",
-        image: "/sponsors/stickergiant.png",
-        url: "https://stickergiant.com",
+        name: "Balsamiq",
+        image: "/sponsors/balsamiq.png",
+        url: "https://balsamiq.com",
       },
+      // {
+      //   name: "Sticker Giant",
+      //   image: "/sponsors/stickergiant.png",
+      //   url: "https://stickergiant.com",
+      // },
     ],
   };
 
