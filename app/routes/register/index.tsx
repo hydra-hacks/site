@@ -1,6 +1,14 @@
 import { Link, Form, redirect, useActionData, useLoaderData } from "remix";
 import { useState, useEffect } from "react";
-import type { LoaderFunction } from "remix";
+// import type { LoaderFunction } from "remix";
+import type { ActionFunction } from "remix";
+
+// Note the "action" export name, this will handle our form POST
+export const action: ActionFunction = async ({ request }) => {
+  const formData = await request.formData();
+
+  return redirect(`/register/success/`);
+};
 
 export default function Register() {
   let query = useLoaderData();
@@ -20,17 +28,6 @@ export default function Register() {
     shirtSize: "",
   });
 
-  // useEffect(() => {
-  //   setValues({
-  //     firstName: query.firstName || "",
-  //     lastName: query.lastName || "",
-  //   });
-  // }, [query]);
-
-  const handleChange = (e: any) => {
-    setValues({ ...values, [e.target.name]: e.target.value });
-  };
-
   return (
     <div className="px-6 py-10 mx-auto font-sans text-white container-copy">
       <h1 className="font-bold headline">Register for Hydra Hacks!</h1>
@@ -42,7 +39,10 @@ export default function Register() {
         </strong>
       </p>
       <section>
-        <Form action="https://airtable.hydrahacks.org/api/appAXROp3O0m256Az/Applications" method="post">
+        <form
+          action="https://airtable.hydrahacks.org/api/appAXROp3O0m256Az/Applications"
+          method="post"
+        >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="col-span-1">
               <label
@@ -84,9 +84,12 @@ export default function Register() {
                 name="email"
                 required
               />
+              <button type="submit" className="btn btn-primary">
+                Submit
+              </button>
             </div>
           </div>
-        </Form>
+        </form>
       </section>
     </div>
   );

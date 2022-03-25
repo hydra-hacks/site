@@ -14,10 +14,6 @@ export let loader: LoaderFunction = () => {
   let data: IndexData = {
     team: [
       {
-        name: "Cow",
-        image: "/team/cow-avatar.png",
-      },
-      {
         name: "Random Person",
         image: "/team/random-person.png",
       },
@@ -36,9 +32,24 @@ export let loader: LoaderFunction = () => {
     ],
     sponsors: [
       {
-        name: "Hack Club Bank",
-        image: "/sponsors/hcb-outline.png",
-        url: "https://hackclub.com/bank",
+        name: "Sticker Mule",
+        image: "/sponsors/stickermule.png",
+        url: "https://stickermule.com",
+      },
+      {
+        name: "Nuro",
+        image: "/sponsors/nuro.png",
+        url: "https://nuro.ai",
+      },
+      {
+        name: "AssemblyAI",
+        image: "/sponsors/assemblyai.png",
+        url: "https://assemblyai.com",
+      },
+      {
+        name: "Sticker Giant",
+        image: "/sponsors/stickergiant.png",
+        url: "https://stickergiant.com",
       },
     ],
   };
@@ -179,8 +190,10 @@ export default function Index() {
             </div>
           </div>
           <div className="container mb-14">
-            <h2 className="pb-3 font-bold headline">Supported by</h2>
-            <ul className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            <h2 className="pb-8 font-bold text-center headline">
+              Supported by
+            </h2>
+            <ul className="grid grid-cols-1 gap-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4 place-items-center lg:mx-20">
               {data.sponsors.map((sponsor) => (
                 <li key={sponsor.name}>
                   <a
@@ -188,17 +201,34 @@ export default function Index() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={sponsor.image} alt={sponsor.name} />
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="h-8"
+                    />
                   </a>
                 </li>
               ))}
             </ul>
-            <p className="mt-2 leading-relaxed caption">
-              Interested in partnering with us? We'd love to chat! Contact us at{" "}
+            <p className="pt-8 mt-2 leading-relaxed text-center caption">
+              Interested in being a sponsor for Hydra Hacks? We'd love to chat!
+              Contact us at{" "}
               <a href="mailto:hello@hydrahacks.org" className="underline">
                 hello@hydrahacks.org
-              </a>{" "}
-              &rarr;
+              </a>
+              &nbsp;&rarr;
+              <br />
+              <span className="text-sm">
+                We also accept tax-deductible contributions through our{" "}
+                <a
+                  href="https://bank.hackclub.com/donations/start/hydra-hacks"
+                  target="_blank"
+                  className="underline"
+                  rel="noopener noreferrer"
+                >
+                  donation page.
+                </a>
+              </span>
             </p>
           </div>
           <div className="container mt-24 mb-14">
