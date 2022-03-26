@@ -833,6 +833,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 2rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }

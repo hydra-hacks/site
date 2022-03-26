@@ -14,11 +14,7 @@ export let loader: LoaderFunction = () => {
   let data: IndexData = {
     team: [
       {
-        name: "Random Person",
-        image: "/team/random-person.png",
-      },
-      {
-        name: "Wahoo",
+        name: "Mmmmmmmmm",
         image: "/team/wahoo.png",
       },
       {
@@ -28,6 +24,14 @@ export let loader: LoaderFunction = () => {
       {
         name: "Hugo Hu",
         image: "/team/hugo.png",
+      },
+      {
+        name: "Grace Cai",
+        image: "/team/grace.png",
+      },
+      {
+        name: "Rebecca Wang",
+        image: "/team/rebecca.png",
       },
       {
         name: "Tahya Mumtahi",
@@ -244,9 +248,9 @@ export default function Index() {
             <h2 className="font-bold text-center lead">
               Made with &hearts; by the Hydra Hacks Team.
             </h2>
-            <ul className="flex justify-center">
+            <ul className="flex justify-center overflow-auto">
               {data.team.map((t) => (
-                <li key={t.name} className="list-none -mr-14">
+                <li key={t.name} title={t.name} className="list-none -mr-14">
                   <img src={t.image} alt={t.name} className="w-40" />
                 </li>
               ))}
