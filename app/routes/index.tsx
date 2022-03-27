@@ -41,6 +41,10 @@ export let loader: LoaderFunction = () => {
         name: "Joy Zou",
         image: "/team/joy.png",
       },
+      {
+        name: "Amanda Zhang",
+        image: "/team/amanda.png",
+      },
     ],
     sponsors: [
       {
