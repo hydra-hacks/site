@@ -1,0 +1,10 @@
+# this is a fake 'CI' that just adds a seal of approval to every PR yeah
+name: ci
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dtinth/seal-of-approval@main
