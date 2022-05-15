@@ -52,11 +52,6 @@ export let loader: LoaderFunction = () => {
     ],
     sponsors: [
       {
-        name: "Sticker Mule",
-        image: "/sponsors/stickermule.png",
-        url: "https://stickermule.com",
-      },
-      {
         name: "Nuro",
         image: "/sponsors/nuro.png",
         url: "https://nuro.ai",
@@ -104,8 +99,7 @@ export default function Index() {
             Hydra Hacks
           </h1>
           <p className="max-w-3xl mx-auto subheadline">
-            The West Coast's largest hackathon for marginalized genders. Hybrid.
-            June 2022.
+            The West Coast's largest hackathon for marginalized genders on June 10-12, 2022.
           </p>
 
           <div className="grid items-start justify-center">
@@ -114,7 +108,7 @@ export default function Index() {
               {/* <Link to="/register"> */}
               <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg cursor-not-allowed">
                 <span className="text-white hover:no-underline">
-                  Register (soon)
+                  Apply (soon)
                 </span>
               </button>
               {/* </Link> */}
@@ -124,16 +118,16 @@ export default function Index() {
         <section className="px-6 text-xl md:px-12">
           <div className="container mb-14">
             <h2 className="font-bold headline" id="about">
-              Something for everyone...
+              About Hydra Hacks
             </h2>
             <p className="leading-relaxed">
-              Hydra Hacks is a 24-hour high school hackathon in the Bay Area.
-              Whether you're just writing your first line of code or you're an
+              Hydra Hacks is a 48-hour online hackathon from the Bay Area.
+              Whether you're writing your first line of code or you're an
               expert hacker, Hydra Hacks is for you. You'll have the opportunity
-              to meet new friends, build awesome projects while attending
-              workshops, eating food, playing games, and more! Hydra Hacks is a{" "}
-              <strong>gender-focused</strong> event &amp; open to all high
-              school students of marginalized genders!
+              to meet new friends, develop awesome projects, and attend
+              workshops! Hydra Hacks is a{" "}
+              <strong>gender-focused</strong> event open to high
+              school and college students of marginalized genders!
             </p>
           </div>
 
@@ -145,23 +139,25 @@ export default function Index() {
               <div className="card--interactive">
                 <div className="text-white">
                   <h3 className="font-bold lead">
-                    Will I be able to participate online?
+                    What is a virtual hackathon?
                   </h3>
                   <p className="text-lg">
-                    Currently, Hydra Hacks is planned to be <em>hybrid</em>{" "}
-                    (both in-person and online) with a focus on the in-person
-                    component.
+                    A hackathon is an fun tech event where teams collaborate on a
+                    project, or "hack", within a weekend. There will be
+                    workshops and mentors to help you learn new things and get
+                    help on your projects.
                   </p>
                 </div>
               </div>
 
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">What about COVID-19?</h3>
+                  <h3 className="font-bold lead">Who is eligible to participate?</h3>
                   <p className="text-lg">
-                    We adhere to strict guidelines for staying safe and healthy.
-                    All participants must be masked &amp; vaccinated in order to
-                    attend in-person.
+                  Hydra Hacks is for people of marginalized genders.
+                  Cis men are welcome to mentor, volunteer, or judge. 
+                  The minimum age to participate is 13 years by June 10, 2022. 
+                  There are no location restrictions!
                   </p>
                 </div>
               </div>
@@ -170,8 +166,8 @@ export default function Index() {
                 <div className="text-white">
                   <h3 className="font-bold lead">How much does it cost?</h3>
                   <p className="text-lg">
-                    Hydra Hacks is free to attend thanks to our generous
-                    sponsors. Food will be provided for in-person participants.
+                  Thanks to our generous donors and sponsors, Hydra Hacks is free to attend. 
+                  Each participant will receive swag and virtual gifts brought to you by our amazing sponsors.
                   </p>
                 </div>
               </div>
@@ -182,7 +178,7 @@ export default function Index() {
                     What if I don't have any experience?
                   </h3>
                   <p className="text-lg">
-                    Don't worry! There will be workshops, mentors, and
+                    Our hackathon is beginner friendly! There will be workshops, mentors, and
                     opportunities to learn new things and get help on your
                     projects!
                   </p>
@@ -195,20 +191,18 @@ export default function Index() {
                     What happens if I don't have a team?
                   </h3>
                   <p className="text-lg">
-                    No worries! On the first day, we'll have team formation
-                    activities and make sure no hacker is left out.
+                  While you do have the option to hack alone, we highly encourage participants to form teams. 
+                  On the first day, we'll have team formation activities and make sure no hacker is left out.
                   </p>
                 </div>
               </div>
 
               <div className="card--interactive">
                 <div className="text-white">
-                  <h3 className="font-bold lead">What is a hackathon?</h3>
+                  <h3 className="font-bold lead">Do I have to stay online the entire time?</h3>
                   <p className="text-lg">
-                    A hackathon is an event where teams collaborate on a
-                    project, or "hack", within a weekend. There will be
-                    workshops and mentors to help you learn new things and get
-                    help on your projects.
+                    No! You can work on your project anytime during the submission period.
+                    Feel free to take breaks, win some prizes at our workshops, and relax. 
                   </p>
                 </div>
               </div>
@@ -256,7 +250,7 @@ export default function Index() {
               </span>
             </p>
           </div>
-          <div className="container mt-24 mb-14">
+          {/* <div className="container mt-24 mb-14">
             <h2 className="font-bold text-center lead">
               Made with &hearts; by the Hydra Hacks Team.
             </h2>
@@ -267,7 +261,7 @@ export default function Index() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </section>
       </main>
     </div>
