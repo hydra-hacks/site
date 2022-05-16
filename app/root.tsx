@@ -153,7 +153,7 @@ function Layout({ children }: { children: React.ReactNode }) {
                   to="/"
                   className="px-4 py-2 bg-blue-500 cursor-not-allowed rounded-2xl hover:text-gray-300"
                 >
-                  Apply (soon)
+                  Schedule 
                 </Link>
               </li>
             </ul>
