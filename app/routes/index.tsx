@@ -66,11 +66,31 @@ export let loader: LoaderFunction = () => {
         image: "/sponsors/balsamiq.png",
         url: "https://balsamiq.com",
       },
-      // {
-      //   name: "Sticker Giant",
-      //   image: "/sponsors/stickergiant.png",
-      //   url: "https://stickergiant.com",
-      // },
+      {
+        name: "Product Hunt",
+        image: "/sponsors/product_hunt.png",
+        url: "https://producthunt.com",
+      },
+      {
+      name: "Sticker Giant",
+      image: "/sponsors/stickergiant.png",
+      url: "https://stickergiant.com",
+      },
+      {
+        name: "Taskade",
+        image: "/sponsors/taskade.png",
+        url: "https://taskade.com/",
+      },
+      {
+        name: "Interview Cake",
+        image: "/sponsors/interviewcake.png",
+        url: "https://interviewcake.com/",
+      },
+      {
+        name: "Streamyard",
+        image: "/sponsors/streamyard.png",
+        url: "https://streamyard.com",
+      }
     ],
   };
 
@@ -104,7 +124,9 @@ export default function Index() {
 
           <div className="grid items-start justify-center">
             <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-lg blur opacity-75 transition duration-1000 group-hover:opacity-100"></div>
+            <div className="flex justify-center mx-auto mt-3 space-x-6">
+
+            {/* <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-lg blur opacity-75 transition duration-1000 group-hover:opacity-100"></div> */}
               {/* <Link to="/register"> */}
               <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
                 <a href="https://airtable.com/shrY7K07FgEIbV1rO" target="_blank">
@@ -112,8 +134,16 @@ export default function Index() {
                   Register
                   </span>
                 </a>
-              </button>
-              {/* </Link> */}
+              </button> 
+
+              <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
+                <a href="https://airtable.com/shrNtOfsyyfloxQ7q" target="_blank">
+                  <span className="text-white hover:no-underline">
+                  Mentors
+                  </span>
+                </a>
+              </button> 
+            </div> 
             </div>
           </div>
         </div>
