@@ -77,6 +77,11 @@ export let loader: LoaderFunction = () => {
       url: "https://stickergiant.com",
       },
       {
+        name: "Wolfram",
+        image: "/sponsors/wolfram.png",
+        url: "https://www.wolframalpha.com",
+      },
+      {
         name: "Taskade",
         image: "/sponsors/taskade.png",
         url: "https://taskade.com/",
@@ -103,7 +108,7 @@ export let meta: MetaFunction = () => {
   return {
     title: "Hydra Hacks",
     description:
-      "Hydra Hacks is a 48-hour in-person hackathon for gender marginalized students!",
+      "Hydra Hacks is the West Coast's Largest Hackathon for Marginalized Genders! June 10-12.",
   };
 };
 
@@ -153,7 +158,7 @@ export default function Index() {
               About Hydra Hacks
             </h2>
             <p className="leading-relaxed">
-              Hydra Hacks is a 48-hour online hackathon from the Bay Area.
+              Hydra Hacks is an online hackathon from the Bay Area.
               Whether you're writing your first line of code or you're an
               expert hacker, Hydra Hacks is for you. You'll have the opportunity
               to meet new friends, develop awesome projects, and attend
@@ -244,7 +249,7 @@ export default function Index() {
             <h2 className="pb-8 font-bold text-center headline">
               Supported by
             </h2>
-            <ul className="grid grid-cols-1 gap-4 gap-y-8 md:grid-cols-3 lg:grid-cols-4 place-items-center lg:mx-20">
+            <ul className="grid grid-cols-1 gap-4 gap-y-8 md:grid-cols-3 lg:grid-cols-3 place-items-center lg:mx-20">
               {data.sponsors.map((sponsor) => (
                 <li key={sponsor.name}>
                   <a
@@ -255,7 +260,7 @@ export default function Index() {
                     <img
                       src={sponsor.image}
                       alt={sponsor.name}
-                      className="h-8"
+                      className="h-12"
                     />
                   </a>
                 </li>
