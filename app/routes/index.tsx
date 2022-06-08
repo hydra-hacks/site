@@ -72,6 +72,16 @@ export let loader: LoaderFunction = () => {
         url: "https://producthunt.com",
       },
       {
+        name: "Digital Ocean",
+        image: "/sponsors/digitalocean.png",
+        url: "https://www.digitalocean.com/",
+      },
+      {
+        name: "XYZ",
+        image: "/sponsors/xyz.png",
+        url: "https://gen.xyz/",
+      },
+      {
       name: "Sticker Giant",
       image: "/sponsors/stickergiant.png",
       url: "https://stickergiant.com",
