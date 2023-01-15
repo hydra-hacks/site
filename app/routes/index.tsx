@@ -134,7 +134,7 @@ export default function Index() {
             Hydra Hacks
           </h1>
           <p className="max-w-3xl mx-auto subheadline">
-            The West Coast's largest hackathon for marginalized genders on June 10-12, 2022.
+            Thank you for joining the West Coast's largest hackathon for marginalized genders on June 10-12, 2022. See you soon in Summer 2023!
           </p>
 
           <div className="grid items-start justify-center">
@@ -144,20 +144,20 @@ export default function Index() {
             {/* <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-lg blur opacity-75 transition duration-1000 group-hover:opacity-100"></div> */}
               {/* <Link to="/register"> */}
               <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
-                <a href="https://airtable.com/shrY7K07FgEIbV1rO" target="_blank">
+                <a href="https://airtable.com/shrWxpro32PLk76aB" target="_blank">
                   <span className="text-white hover:no-underline">
-                  Register
+                  Pre-Register for 2023 Hackathon
                   </span>
                 </a>
               </button> 
 
-              <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
+<!--               <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
                 <a href="https://airtable.com/shrNtOfsyyfloxQ7q" target="_blank">
                   <span className="text-white hover:no-underline">
                   Mentors
                   </span>
                 </a>
-              </button> 
+              </button>  -->
             </div> 
             </div>
           </div>
