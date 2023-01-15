@@ -151,13 +151,13 @@ export default function Index() {
                 </a>
               </button> 
 
-<!--               <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
-                <a href="https://airtable.com/shrNtOfsyyfloxQ7q" target="_blank">
+              <button className="relative flex items-center px-6 py-4 text-xl leading-none bg-blue-500 rounded-lg">
+                <a href="https://airtable.com/shrAEfy2GpTUDq4H8" target="_blank">
                   <span className="text-white hover:no-underline">
-                  Mentors
+                  Share Opportunities
                   </span>
                 </a>
-              </button>  -->
+              </button>  
             </div> 
             </div>
           </div>
